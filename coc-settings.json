@@ -1,0 +1,61 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "jsx",
+    "typescript",
+    "typescriptreact",
+    "tsx",
+    "graphql",
+    "html",
+    "yaml",
+    "json",
+    "python"
+  ],
+  "languageserver": {
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hie.yaml"
+      ],
+      "filetypes": ["haskell", "lhaskell"],
+      "settings": {
+        "languageServerHaskell": {
+          "hlintOn": true,
+          "maxNumberOfProblems": 10
+        }
+      }
+    }
+    /* "elmLS": { */
+    /*   "command": "elm-language-server", */
+    /*   "filetypes": ["elm"], */
+    /*   "rootPatterns": ["elm.json"] */
+    /* } */
+  },
+  "pyright.disableDiagnostics": true,
+  "python.linting.mypyEnabled": true,
+  /* "python.linting.flake8Enabled": true, */
+  /* "codeLens.enable": true, */
+  /* // python config */
+  /* "python.venvFolders": [ */
+  /*   "envs", */
+  /*   ".pyenv", */
+  /*   ".direnv", */
+  /*   "env" */
+  /* ], */
+  /* "python.pythonPath": "/home/adrian/repos/infra/ping/.venv/bin/python", */
+  /* "python.linting.pylintPath":"/usr/bin/pylint", */
+  /* "python.formatting.provider": "black", */
+  /* "python.jediEnabled": false, */
+  /* "python.linting.enabled": true, */
+  /* "python.linting.pylintEnabled": true, */
+
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
+}
