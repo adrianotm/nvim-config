@@ -28,8 +28,7 @@
       "filetypes": ["haskell", "lhaskell"],
       "settings": {
         "languageServerHaskell": {
-          "hlintOn": true,
-          "maxNumberOfProblems": 10
+          "hlintOn": true
         }
       }
     }
@@ -41,6 +40,8 @@
   },
   "pyright.disableDiagnostics": true,
   "python.linting.mypyEnabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.formatting.provider": "black",
   /* "python.linting.flake8Enabled": true, */
   /* "codeLens.enable": true, */
   /* // python config */
