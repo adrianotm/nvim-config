@@ -1,4 +1,4 @@
-nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gs :Git<cr>
 nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gp :Git push origin<cr>
 nnoremap <leader>ga :Gw<cr>

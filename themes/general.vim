@@ -1,15 +1,22 @@
 " configure nvcode-color-schemes
-let g:nvcode_termcolors=256
+" let g:nvcode_termcolors=256
 
 syntax on
-set background=dark " or light if you want light mode
-colorscheme gruvbox
+filetype plugin indent on
 
+" colorscheme gruvbox
+" autocmd vimenter * ++nested colorscheme gruvbox
 
-" checks if your terminal has 24-bit color support
+" If you have vim >=8.0 or Neovim >= 0.1.5
 if (has("termguicolors"))
-    set termguicolors
-    hi LineNr ctermbg=NONE guibg=NONE
+ set termguicolors
 endif
 
-lua require'colorizer'.setup()
+" Theme
+syntax enable
+set background=dark
+" Set contrast.
+" This configuration option should be placed before `colorscheme gruvbox-material`.
+" Available values: 'hard', 'medium'(default), 'soft'
+let g:gruvbox_material_background = 'medium'
+colorscheme gruvbox-material

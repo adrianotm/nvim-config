@@ -45,3 +45,10 @@ nmap gp :<C-u>pedit %<Bar>wincmd P<Bar>norm! gd<Bar>wincmd p<CR>
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
+" Show diagnostics in popup
+nnoremap <silent> <Leader>e <Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+
+" Lspsaga
+nnoremap <silent>K :Lspsaga hover_doc<CR>
+inoremap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
+nnoremap <silent> gh <Cmd>Lspsaga lsp_finder<CR>

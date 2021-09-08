@@ -8,25 +8,12 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
-    " Plug 'pangloss/vim-javascript'
-    " Plug 'mxw/vim-jsx'
-    " Gruvbox theme
-    " Plug 'morhetz/gruvbox'
-    " Themes
-    Plug 'rktjmp/lush.nvim'
-    Plug 'npxbr/gruvbox.nvim'
-    Plug 'norcalli/nvim-colorizer.lua'
-    " Plug 'christianchiarulli/nvcode-color-schemes.vim'
-    " Intellisense
-    Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
+    " Gruvbox theme that works with 5.0
+    Plug 'sainnhe/gruvbox-material'
+    " Telescope (fzf)
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
     Plug 'airblade/vim-rooter'
-    " Easymotion
-    " Plug 'easymotion/vim-easymotion'
     " Sneak
     Plug 'justinmk/vim-sneak'
     " Airline
@@ -46,17 +33,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/gv.vim'
     " Stratify
     Plug 'mhinz/vim-startify'
-    " Haskell
+    " Haskell syntax
     Plug 'neovimhaskell/haskell-vim'
-    Plug 'alx741/vim-stylishask' " Optional
-    Plug 'sbdchd/neoformat'
-    Plug 'ndmitchell/ghcid', { 'rtp': 'plugins/nvim' }
-    " TypeScript
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
-    " Plug 'pangloss/vim-javascript'
-    " Plug 'leafgarland/typescript-vim'
-    " Plug 'peitalin/vim-jsx-typescript'
-    " Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+    " 0.5 nvim
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':tsupdate'}  " we recommend updating the parsers on update
+    Plug 'nvim-lua/completion-nvim'
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'glepnir/lspsaga.nvim'
+     
+    " Tmux
+    Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
