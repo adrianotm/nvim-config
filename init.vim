@@ -13,8 +13,8 @@ source $HOME/.config/nvim/plug-config/buffkill.vim
 source $HOME/.config/nvim/plug-config/gitgutter.vim
 source $HOME/.config/nvim/plug-config/fugitive.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
-source $HOME/.config/nvim/plug-config/treesitter.vim
-source $HOME/.config/nvim/plug-config/completition.vim
+" source $HOME/.config/nvim/plug-config/treesitter.vim
+" source $HOME/.config/nvim/plug-config/completition.vim
 source $HOME/.config/nvim/plug-config/lspconfig.vim
 source $HOME/.config/nvim/plug-config/haskell-vim.vim
 "Themes
@@ -22,4 +22,4 @@ source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/themes/general.vim
 
 " Python path
-let g:python3_host_prog = expand("~/miniconda3/bin/python3.8")
+let g:python3_host_prog = "/usr/bin/python3.8"

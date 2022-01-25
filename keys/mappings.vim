@@ -22,7 +22,7 @@ nnoremap <C-s> :w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
 " <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Better tabbing
 vnoremap < <gv
@@ -46,9 +46,16 @@ nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
 " Show diagnostics in popup
-nnoremap <silent> <Leader>e <Cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+nnoremap <silent> <Leader>e <Cmd>lua vim.diagnostic.open_float()<CR>
 
 " Lspsaga
-nnoremap <silent>K :Lspsaga hover_doc<CR>
-inoremap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
-nnoremap <silent> gh <Cmd>Lspsaga lsp_finder<CR>
+" nnoremap <silent>K :Lspsaga hover_doc<CR>
+" inoremap <silent> <C-k> <Cmd>Lspsaga signature_help<CR>
+" nnoremap <silent> gh <Cmd>Lspsaga lsp_finder<CR>
+" nnoremap <silent> gr <cmd>lua require('lspsaga.rename').rename()<CR>
+
+nnoremap <silent>K <Cmd>lua vim.lsp.buf.hover()<CR>
+inoremap <silent> <C-k> <Cmd>lua vim.lsp.buf.signature_help()<CR>
+inoremap <silent> gd <Cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> gh <Cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> gr <cmd>lua vim.lsp.buf.rename()<CR>

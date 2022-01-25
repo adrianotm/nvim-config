@@ -35,14 +35,28 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify'
     " Haskell syntax
     Plug 'neovimhaskell/haskell-vim'
+    " Autoformat
+    Plug 'Chiel92/vim-autoformat'
     " 0.5 nvim
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':tsupdate'}  " we recommend updating the parsers on update
-    Plug 'nvim-lua/completion-nvim'
+    " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':tsupdate'}  " we recommend updating the parsers on update
+    " Plug 'nvim-lua/completion-nvim'
     Plug 'neovim/nvim-lspconfig'
-    Plug 'glepnir/lspsaga.nvim'
-     
+    " Plug 'glepnir/lspsaga.nvim'
+    " Rust
+    Plug 'rust-lang/rust.vim'
     " Tmux
     Plug 'christoomey/vim-tmux-navigator'
+    " Autocomplete
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-cmdline'
+    Plug 'hrsh7th/nvim-cmp'
+    Plug 'hrsh7th/cmp-vsnip'
+    Plug 'hrsh7th/vim-vsnip'
+    " Lsp
+    Plug 'RishabhRD/popfix'
+    Plug 'RishabhRD/nvim-lsputils'
 
 call plug#end()
 
