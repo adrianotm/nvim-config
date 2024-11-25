@@ -31,6 +31,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'junegunn/gv.vim'
+    Plug 'kyazdani42/nvim-web-devicons'
     " Stratify
     Plug 'mhinz/vim-startify'
     " Haskell syntax
@@ -38,10 +39,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Autoformat
     Plug 'Chiel92/vim-autoformat'
     " 0.5 nvim
-    " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':tsupdate'}  " we recommend updating the parsers on update
-    " Plug 'nvim-lua/completion-nvim'
     Plug 'neovim/nvim-lspconfig'
-    " Plug 'glepnir/lspsaga.nvim'
     " Rust
     Plug 'rust-lang/rust.vim'
     " Tmux
@@ -57,6 +55,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Lsp
     Plug 'RishabhRD/popfix'
     Plug 'RishabhRD/nvim-lsputils'
+    " Markdown
+    Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+    " Typescript
+    Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
+    " Nix
+    Plug 'LnL7/vim-nix'
+    " Ember
+    Plug 'joukevandermaas/vim-ember-hbs'
 
 call plug#end()
 

@@ -19,4 +19,7 @@ set background=dark
 " This configuration option should be placed before `colorscheme gruvbox-material`.
 " Available values: 'hard', 'medium'(default), 'soft'
 let g:gruvbox_material_background = 'medium'
+let g:gruvbox_material_palette = 'mix'
 colorscheme gruvbox-material
+
+set colorcolumn=100

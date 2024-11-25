@@ -37,5 +37,7 @@ set noswapfile                          " No swap files
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 autocmd BufWritePre * :%s/\s\+$//e
 
+autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
+
 " You can't stop me
 cmap w!! w !sudo tee %

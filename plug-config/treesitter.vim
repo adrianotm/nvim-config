@@ -7,4 +7,6 @@ require'nvim-treesitter.configs'.setup {
     disable = { "c", "rust" },  -- list of language that will be disabled
   },
 }
+require('litee.lib').setup()
+require('litee.gh').setup()
 EOF
